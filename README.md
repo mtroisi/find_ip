@@ -5,7 +5,7 @@ Short script that finds the IP address of a FQDN without waiting for DNS records
 ## Usage
 
 ```
-find_ip.sh www.example.com example.com
+./find_ip.sh www.example.com example.com
 ```
 
 Taking two arguments in the order <FQDN> <root domain> a trusted name server (default Cloudflare's 1.1.1.1) is queried for the authoritative nameserver for the FQDN provided. That authoritative name server is then queried for the A record of the FQDN. This will always return the most recent DNS record for the host.
